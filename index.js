@@ -68,10 +68,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(a, b){
+function multiply(a, b) {
   return a * b
 }
-const math = multiply(2,2)
+console.log(multiply(5,7));
 
 
 
@@ -85,9 +85,10 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(humanYears){
+  return humanYears * 7
 }
+console.log(dogYears(3));
 
 
 
@@ -120,29 +121,29 @@ NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.449
 
 function hungryDog(age, weight){
   if (age >= 1 && weight <= 5) {
-    console.log("Amount of Dog Food:");
-    return weight * 0.5;
+      console.log("Amount of Dog Food:");
+      return weight * 0.5;
   } else if (age >= 1 && weight <= 10) {
-    console.log("Amount of Dog Food:");
-    return weight * 0.04
+      console.log("Amount of Dog Food:");
+      return weight * 0.04
   } else if (age >= 1 && weight <= 15) {
-    console.log("Amount of Dog Food:");
-    return weight * 0.03;
+      console.log("Amount of Dog Food:");
+      return weight * 0.03;
   } else if (age >= 1 && weight < 15) {
-    console.log("Amount of Dog Food:");
-    return weight * 0.02;
-  } else if (age = 0.17) {
-    console.log("Amount of Dog Food:");
-    return weight * 0.1;
+      console.log("Amount of Dog Food:");
+      return weight * 0.02;
+  } else if (age = 0.16) {
+      console.log("Amount of Dog Food:");
+      return weight * 0.1;
   } else if (age <= 0.33) {
-    console.log("Amount of Dog Food:");
-    return weight * 0.1;
+      console.log("Amount of Dog Food:");
+      return weight * 0.1;
   } else if (age <= 0.58) {
-    console.log("Amount of Dog Food:");
-    return weight * 0.05;
+      console.log("Amount of Dog Food:");
+      return weight * 0.05;
   } else if (age <= 1) {
-    console.log("Amount of Dog Food:");
-    return weight * 0.04;
+      console.log("Amount of Dog Food:");
+      return weight * 0.04;
 }
   console.log(hungryDog(1,15));
 
@@ -277,4 +278,5 @@ module.exports = {
   feet,
   annoyingSong,
   grade
+}
 }
