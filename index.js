@@ -19,7 +19,13 @@ Do the following:
 
    HINT: no function required
 */
-
+const votingAge = 18;
+if (votingAge > 18) {
+  console.log(true);
+}
+  else {
+    console.log(false)
+  }
 
 
 /*
@@ -37,6 +43,7 @@ Do the following:
 
 
 
+
 /*
 Task 1c - Convert Strings to Numbers
 
@@ -47,8 +54,9 @@ Do the following:
 
    HINT: look up the Number method
 */
-
-
+const first = "1999";
+const second = 1999;
+console.log(Number(first));
 
 
 /*
@@ -60,9 +68,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
+function multiply(a, b){
+  return a * b
 }
+const math = multiply(2,2)
 
 
 
@@ -109,8 +118,10 @@ Puppies less than 1 year
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
+function hungryDog(age, weight){
+  if (age >= 1 && weight <= 5) {
+    return weight * 0.5;
+  } else if (age <= 1 && weight )
 }
 
 
