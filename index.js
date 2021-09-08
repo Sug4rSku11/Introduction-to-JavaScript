@@ -71,7 +71,7 @@ Do the following:
 function multiply(a, b) {
   return a * b
 }
-console.log(multiply(5,7));
+  console.log(multiply(5,7));
 
 
 
@@ -88,7 +88,7 @@ Do the following:
 function dogYears(humanYears){
   return humanYears * 7
 }
-console.log(dogYears(3));
+
 
 
 
@@ -120,16 +120,16 @@ NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.449
 */  
 
 function hungryDog(age, weight){
-  if (age >= 1 && weight <= 5) {
+  if (age => 1 && weight <= 5) {
       console.log("Amount of Dog Food:");
       return weight * 0.5;
-  } else if (age >= 1 && weight <= 10) {
+  } else if (age => 1 && weight <= 10) {
       console.log("Amount of Dog Food:");
       return weight * 0.04
-  } else if (age >= 1 && weight <= 15) {
+  } else if (age => 1 && weight <= 15) {
       console.log("Amount of Dog Food:");
       return weight * 0.03;
-  } else if (age >= 1 && weight < 15) {
+  } else if (age => 1 && weight < 15) {
       console.log("Amount of Dog Food:");
       return weight * 0.02;
   } else if (age = 0.16) {
@@ -186,10 +186,10 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(km){
+  return km * 0.621371
 }
-
+  console.log(miles(10));
 
 
 //Task 5b - Feet to CM
@@ -200,10 +200,10 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(cm){
+  return cm / 30.48;
 }
-
+  console.log(feet(160));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -216,8 +216,8 @@ Using the annoyingSong function below do the following:
     "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+function annoyingSong(number){
+      if (num === )
 }
 
 
@@ -236,10 +236,19 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+function grade(grade){
+ if (grade => 90) {
+     console.log("You got an A");
+ }  else if (grade =>80) {
+      console.log("You got a B");
+ }   else if (grade => 70) {
+      console.log("You got a C");
+ }   else if (grade => 60) {
+      console.log("You got a C");
+ }   else if (grade < 59) {
+      console.log("You got an F");
+ }
 }
-
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
