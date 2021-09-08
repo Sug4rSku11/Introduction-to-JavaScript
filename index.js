@@ -126,14 +126,14 @@ Puppies less than 1 year
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(age, weight){
+function hungryDog(weight, age){
   if (age >= 1 && weight <= 5) {
-      return weight * 0.2;
+      return weight * 0.05;
   } else if (age >= 1 && weight >= 6 && weight <= 10) {
-      return weight * 0.04
+      return weight * 0.04;
   } else if (age >= 1 && weight  >= 11 && weight <= 15) {
-      return weight * 0.03;
-  } else if (age >= 1 && weight < 15) {
+      return weight * 0.03
+  } else if (age >= 1 && weight > 15) {
       return weight * 0.02;
   } else if (age < 1 && age >= 0.16) {
       return weight * 0.1;
@@ -145,7 +145,7 @@ function hungryDog(age, weight){
       return weight * 0.04;
 }
 }
-  console.log(hungryDog(1,15));
+  console.log(hungryDog(15,1));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
