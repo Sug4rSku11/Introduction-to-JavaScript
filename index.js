@@ -135,14 +135,14 @@ function hungryDog(weight, age){
       return weight * 0.03
   } else if (age >= 1 && weight > 15) {
       return weight * 0.02;
-  } else if (age < 1 && age >= 0.16) {
+  } else if ( age >= 0.16) { // 2 months
       return weight * 0.1;
-  } else if (age <= 0.33) {
-      return weight * 0.1;
-  } else if (age <= 0.583) {  
+  } else if (age >= 0.33 && age < 0.583) { // 4 months - 7 months
       return weight * 0.05;
-  } else if (age <= 1) {
-      return weight * 0.04;
+  } else if (age >= 0.583 && age < 1) {  // 7 months - 12 months
+      return weight * 0.04; 
+  // } else if (age <= 1) {
+  //     return weight * 0.04;
 }
 }
   console.log(hungryDog(15,1));
@@ -190,7 +190,7 @@ function game(user, computer){
     return `you lose!`;
   }
 }
-  console.log(game('rock', computer));
+  
 
 
 
