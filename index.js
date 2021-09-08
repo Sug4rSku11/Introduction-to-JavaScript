@@ -20,10 +20,10 @@ Do the following:
    HINT: no function required
 */
 const votingAge = 18;
-if (votingAge > 18) {
+
+if (votingAge >= 18) {
   console.log(true);
-}
-  else {
+} else {
     console.log(false)
   }
 
@@ -38,7 +38,14 @@ Do the following:
 
    HINT: no function required
 */
+let person = "Desiree";
+let someone = "Joseph";
 
+if (someone === "Joseph"){
+  person = "Adrian";
+} else {
+  someone = "Desire";
+}
 
 
 
@@ -69,7 +76,7 @@ Do the following:
 */
 
 function multiply(a, b) {
-  return a * b
+  return a * b;
 }
   console.log(multiply(5,7));
 
@@ -85,10 +92,10 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(humanYears){
-  return humanYears * 7
+function dogYears(age){
+  return age * 7
 }
-
+  console.log(dogYears(3));
 
 
 
@@ -120,16 +127,16 @@ NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.449
 */  
 
 function hungryDog(age, weight){
-  if (age => 1 && weight <= 5) {
+  if (age >= 1 && weight <= 5) {
       console.log("Amount of Dog Food:");
       return weight * 0.5;
-  } else if (age => 1 && weight <= 10) {
+  } else if (age >= 1 && weight <= 10) {
       console.log("Amount of Dog Food:");
       return weight * 0.04
-  } else if (age => 1 && weight <= 15) {
+  } else if (age >= 1 && weight <= 15) {
       console.log("Amount of Dog Food:");
       return weight * 0.03;
-  } else if (age => 1 && weight < 15) {
+  } else if (age >= 1 && weight < 15) {
       console.log("Amount of Dog Food:");
       return weight * 0.02;
   } else if (age = 0.16) {
@@ -168,9 +175,17 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+let computer = Math.random();
 
+  if (computer <= 0.34) {
+    computer = 'rock';
+  } else if (computer <= 0.67){
+    computer = 'paper';
+  }else if (computer > 0.67); {
+    computer = 'scissors'
+  }
 function game(user, computer){
-  /*add your code here*/
+  
 }
 
 
@@ -217,7 +232,7 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(number){
-      if (num === )
+      
 }
 
 
