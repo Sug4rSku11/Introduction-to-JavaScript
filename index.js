@@ -152,6 +152,7 @@ function hungryDog(age, weight){
       console.log("Amount of Dog Food:");
       return weight * 0.04;
 }
+}
   console.log(hungryDog(1,15));
 
 
@@ -266,14 +267,14 @@ Using the grade function below do the following:
 */
 
 function grade(number){
- if (number => 90) {
+ if (number >= 90) {
      return `you got an A`;
- }  else if (number =>80) {
-    return `you got an B`;
- }   else if (number => 70) {
-    return `you got an C`;
- }   else if (number => 60) {
-    return `you got an D`;
+ }  else if (number >= 80) {
+    return `you got a B`;
+ }   else if (number >= 70) {
+    return `you got a C`;
+ }   else if (number >= 60) {
+    return `you got a D`;
  }   else if (grade < 59) {
     return `you got an F`;
  }
@@ -316,5 +317,4 @@ module.exports = {
   feet,
   annoyingSong,
   grade
-}
 }
