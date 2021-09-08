@@ -128,28 +128,20 @@ NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.449
 
 function hungryDog(age, weight){
   if (age >= 1 && weight <= 5) {
-      console.log("Amount of Dog Food:");
-      return weight * 0.5;
-  } else if (age >= 1 && weight <= 10) {
-      console.log("Amount of Dog Food:");
+      return weight * 0.2;
+  } else if (age >= 1 && weight >= 6 && weight <= 10) {
       return weight * 0.04
-  } else if (age >= 1 && weight <= 15) {
-      console.log("Amount of Dog Food:");
+  } else if (age >= 1 && weight  >= 11 && weight <= 15) {
       return weight * 0.03;
   } else if (age >= 1 && weight < 15) {
-      console.log("Amount of Dog Food:");
       return weight * 0.02;
-  } else if (age = 0.16) {
-      console.log("Amount of Dog Food:");
+  } else if (age < 1 && age >= 0.16) {
       return weight * 0.1;
   } else if (age <= 0.33) {
-      console.log("Amount of Dog Food:");
       return weight * 0.1;
-  } else if (age <= 0.58) {
-      console.log("Amount of Dog Food:");
+  } else if (age <= 0.583) {  
       return weight * 0.05;
   } else if (age <= 1) {
-      console.log("Amount of Dog Food:");
       return weight * 0.04;
 }
 }
@@ -189,13 +181,13 @@ function game(user, computer){
   if (user === computer){
     return `it's a tie`;
   } else if (user === 'rock' && computer === 'scissors') {
-    return `you win`;
+    return `you win!`;
   }else if (user === 'paper' && computer === 'rock'){
-    return `you win`;
+    return `you win!`;
   }else if (user === 'scissors' && computer === 'paper'){
-    return `you win`;
+    return `you win!`;
   } else {
-    return `you lose`;
+    return `you lose!`;
   }
 }
   console.log(game('rock', computer));
@@ -244,9 +236,8 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(number){
-      for(let i = number; i > 0; i --){
-        return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down
-        pass it around ${i -1} bottle of soda on the wall`
+      for(let i = number; i > 0; i -- ){
+        return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i - 1} bottles of soda on the wall`
       }
 }
   console.log(annoyingSong(5));
@@ -275,7 +266,7 @@ function grade(number){
     return `you got a C`;
  }   else if (number >= 60) {
     return `you got a D`;
- }   else if (grade < 59) {
+ }   else if (number <= 59) {
     return `you got an F`;
  }
 }
